@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" role="img" aria-label="Pessoa correndo">
+  <rect width="400" height="240" fill="#DCE8EC"/>
+  <rect y="190" width="400" height="50" fill="#0F4C5C"/>
+  <circle cx="215" cy="60" r="20" fill="#E36414"/>
+  <g stroke="#0F4C5C" stroke-width="12" stroke-linecap="round" fill="none">
+    <line x1="205" y1="85" x2="185" y2="135"/>
+    <polyline points="185,135 215,160 190,185"/>
+    <polyline points="185,135 160,160 135,150"/>
+    <polyline points="203,95 235,115 255,100"/>
+    <polyline points="203,95 175,105 160,125"/>
+  </g>
+</svg>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- configurações da página -->
+    <meta charset="UTF-8">
+    <meta http-equiv="content-language" content="pt-br">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Hugo Gabriel">
+    <meta name="keywords" content="treino, saúde, exercícios, alimentação, hidratação">
+    <meta name="description" content="Monte um treino adaptável escolhendo volume, intensidade e ênfase muscular.">
+    <title>Montar treino | Musculei</title>
+
+    <!-- fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- estilos -->
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/montar-treino.css">
+</head>
+<body>
+
+    
+    <header id="topo">
+        <h1>Musculei</h1>
+        <p>Treino e saúde do jeito simples</p>
+        <nav>
+            <a href="index.html" class="ativo">Início</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="treinos.html">Treinos</a>
+            <a href="montar-treino.html">Montar treino</a>
+            <a href="treino-em-casa.html">Em casa</a>
+            <a href="alimentacao.html">Alimentação</a>
+            <a href="hidratacao.html">Hidratação</a>
+            <a href="imc.html">IMC</a>
+            <a href="perguntas.html">Perguntas</a>
+            <a href="cadastro.html">Cadastro</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+
+    
+    <main>
+        <h1>Monte o seu treino</h1>
+
+        <section>
+            <p class="introducao">Escolha como você quer treinar.</p>
+
+            
+            <div class="montador">
+
+            <fieldset class="escolha">
+                <legend>1. Volume (quantidade de treino)</legend>
+                <input type="radio" class="radio-oculto" name="volume" id="vol-low">
+                <label class="chip" for="vol-low">Baixo</label>
+                <input type="radio" class="radio-oculto" name="volume" id="vol-med" checked>
+                <label class="chip" for="vol-med">Médio</label>
+                <input type="radio" class="radio-oculto" name="volume" id="vol-high">
+                <label class="chip" for="vol-high">Alto</label>
+                <p class="nota">Volume é a quantidade de séries. Baixo: menos tempo e menos cansaço. Alto: mais tempo e mais cansaço.</p>
+            </fieldset>
+
+            <fieldset class="escolha">
+                <legend>2. Modelo de treino (intensidade)</legend>
+                <input type="radio" class="radio-oculto" name="intensidade" id="int-leve">
+                <label class="chip" for="int-leve">Leve</label>
+                <input type="radio" class="radio-oculto" name="intensidade" id="int-mod" checked>
+                <label class="chip" for="int-mod">Moderado</label>
+                <input type="radio" class="radio-oculto" name="intensidade" id="int-alta">
+                <label class="chip" for="int-alta">Intenso</label>
+                <p class="nota">Intensidade é o quanto você se esforça em cada série. Intenso = carga mais pesada e menos repetições.</p>
+                <p class="nota">Se escolher a intensidade alta será necessário utilizar halteres, e elásticos.</p>
+            </fieldset>
+
+            <fieldset class="escolha">
+                <legend>3. Ênfase em um músculo (opcional)</legend>
+                <input type="radio" class="radio-oculto" name="enfase" id="enf-nenhuma" checked>
+                <label class="chip" for="enf-nenhuma">Nenhuma</label>
+                <input type="radio" class="radio-oculto" name="enfase" id="enf-peito">
+                <label class="chip" for="enf-peito">Peito</label>
+                <input type="radio" class="radio-oculto" name="enfase" id="enf-costas">
+                <label class="chip" for="enf-costas">Costas</label>
+                <input type="radio" class="radio-oculto" name="enfase" id="enf-pernas">
+                <label class="chip" for="enf-pernas">Pernas</label>
+                <input type="radio" class="radio-oculto" name="enfase" id="enf-ombros">
+                <label class="chip" for="enf-ombros">Ombros</label>
+                <input type="radio" class="radio-oculto" name="enfase" id="enf-bracos">
+                <label class="chip" for="enf-bracos">Braços</label>
+                <p class="nota">Se escolher um músculo, o treino ganha 2 exercícios extras para ele.</p>
+                <p class="nota">Com essa opção marcada, o treino necessita de <strong>halteres</strong> e <strong>elásticos</strong>.</p>
+            </fieldset>
+
+                <div class="resultado">
+                    <h2>Seu treino agora</h2>
+
+                    <div class="resumo">
+                        <ul>
+                            <li><b>Frequência:</b> <span class="v-low">2 dias por semana</span><span class="v-med">3 dias por semana</span><span class="v-high">4 dias por semana (pode alternar parte de cima e parte de baixo)</span></li>
+                            <li><b>Séries por exercício:</b> <span class="v-low">2 séries</span><span class="v-med">3 séries</span><span class="v-high">4 séries</span></li>
+                            <li><b>Repetições:</b> <span class="i-leve">12 a 15 (carga leve)</span><span class="i-mod">8 a 12 (carga média)</span><span class="i-alta">5 a 8 (carga pesada)</span></li>
+                            <li><b>Descanso entre séries:</b> <span class="i-leve">45 s</span><span class="i-mod">60 a 90 s</span><span class="i-alta">2 a 3 min</span></li>
+                            <li><b>Esforço:</b> <span class="i-leve">termine cada série sentindo que ainda faria cerca de 4 repetições para realizar a última série até a falha </span><span class="i-mod">termine cada série sentindo que ainda faria 2 ou 3 repetições para realizar a última série até a falha</span><span class="i-alta">termine cada série sentindo que ainda faria só 1 ou 2 repetições para realizar a última série até a falha</span></li>
+                        </ul>
+                    </div>
+
+                    
+                    <p class="aviso aviso-combo"><b>Atenção:</b> volume alto com intensidade intensa é uma combinação puxada. Se você está começando, prefira volume baixo ou médio e intensidade leve ou moderada.</p>
+
+                    <h3>Treino base (corpo inteiro)</h3>
+                <table>
+                    <caption>Estilo de treino fullbody</caption>
+                    <thead>
+                        <tr><th>Exercício</th><th>Músculo</th><th>Séries</th><th>Repetições</th><th>Descanso</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Agachamento livre</td><td>Pernas</td><td><span class="v-low">2</span><span class="v-med">3</span><span class="v-high">4</span></td><td><span class="i-leve">12 a 15</span><span class="i-mod">8 a 12</span><span class="i-alta">5 a 8</span></td><td><span class="i-leve">45 s</span><span class="i-mod">60 a 90 s</span><span class="i-alta">2 a 3 min</span></td></tr>
+                        <tr><td>Flexão (joelhos no chão se precisar)</td><td>Peito</td><td><span class="v-low">2</span><span class="v-med">3</span><span class="v-high">4</span></td><td><span class="i-leve">12 a 15</span><span class="i-mod">8 a 12</span><span class="i-alta">5 a 8</span></td><td><span class="i-leve">45 s</span><span class="i-mod">60 a 90 s</span><span class="i-alta">2 a 3 min</span></td></tr>
+                        <tr><td>Remada ou barra fixa</td><td>Costas</td><td><span class="v-low">2</span><span class="v-med">3</span><span class="v-high">4</span></td><td><span class="i-leve">12 a 15</span><span class="i-mod">8 a 12</span><span class="i-alta">5 a 8</span></td><td><span class="i-leve">45 s</span><span class="i-mod">60 a 90 s</span><span class="i-alta">2 a 3 min</span></td></tr>
+                        <tr><td>Desenvolvimento (com halteres de preferência)</td><td>Ombros</td><td><span class="v-low">2</span><span class="v-med">3</span><span class="v-high">4</span></td><td><span class="i-leve">12 a 15</span><span class="i-mod">8 a 12</span><span class="i-alta">5 a 8</span></td><td><span class="i-leve">45 s</span><span class="i-mod">60 a 90 s</span><span class="i-alta">2 a 3 min</span></td></tr>
+                        <tr><td>Prancha</td><td>Abdômen</td><td><span class="v-low">2</span><span class="v-med">3</span><span class="v-high">4</span></td><td><span class="i-leve">20 s</span><span class="i-mod">30 s</span><span class="i-alta">45 s</span></td><td><span class="i-leve">45 s</span><span class="i-mod">60 a 90 s</span><span class="i-alta">2 a 3 min</span></td></tr>
+                    </tbody>
+                </table>
+
+            
+            <div class="bloco-enfase e-peito">
+                <h3>Bloco de ênfase: Peito <span class="selo">+2 exercícios</span></h3>
+                <p>Faça estes dois exercícios no final do treino, depois dos exercícios do treino base.</p>
+                <table>
+                    <caption>Exercícios extras de peito</caption>
+                    <thead>
+                        <tr><th>Exercício</th><th>Músculo</th><th>Séries</th><th>Repetições</th><th>Descanso</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Supino reto com halteres</td><td>Peito</td><td><span class="v-low">2</span><span class="v-med">3</span><span class="v-high">4</span></td><td><span class="i-leve">12 a 15</span><span class="i-mod">8 a 12</span><span class="i-alta">5 a 8</span></td><td><span class="i-leve">45 s</span><span class="i-mod">60 a 90 s</span><span class="i-alta">2 a 3 min</span></td></tr>
+                        <tr><td>Crucifixo com halteres</td><td>Peito</td><td><span class="v-low">2</span><span class="v-med">3</span><span class="v-high">4</span></td><td><span class="i-leve">12 a 15</span><span class="i-mod">8 a 12</span><span class="i-alta">5 a 8</span></td><td><span class="i-leve">45 s</span><span class="i-mod">60 a 90 s</span><span class="i-alta">2 a 3 min</span></td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            
+            <div class="bloco-enfase e-costas">
+                <h3>Bloco de ênfase: Costas <span class="selo">+2 exercícios</span></h3>
+                <p>Faça estes dois exercícios no final do treino, depois dos exercícios do treino base.</p>
+                <table>
+                    <caption>Exercícios extras de costas</caption>
+                    <thead>
+                        <tr><th>Exercício</th><th>Músculo</th><th>Séries</th><th>Repetições</th><th>Descanso</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Puxada alta (polia ou elástico)</td><td>Costas</td><td><span class="v-low">2</span><span class="v-med">3</span><span class="v-high">4</span></td><td><span class="i-leve">12 a 15</span><span class="i-mod">8 a 12</span><span class="i-alta">5 a 8</span></td><td><span class="i-leve">45 s</span><span class="i-mod">60 a 90 s</span><span class="i-alta">2 a 3 min</span></td></tr>
+                        <tr><td>Remada curvada com halteres</td><td>Costas</td><td><span class="v-low">2</span><span class="v-med">3</span><span class="v-high">4</span></td><td><span class="i-leve">12 a 15</span><span class="i-mod">8 a 12</span><span class="i-alta">5 a 8</span></td><td><span class="i-leve">45 s</span><span class="i-mod">60 a 90 s</span><span class="i-alta">2 a 3 min</span></td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            
+            <div class="bloco-enfase e-pernas">
+                <h3>Bloco de ênfase: Pernas <span class="selo">+2 exercícios</span></h3>
+                <p>Faça estes dois exercícios no final do treino, depois dos exercícios do treino base.</p>
+                <table>
+                    <caption>Exercícios extras de pernas</caption>
+                    <thead>
+                        <tr><th>Exercício</th><th>Músculo</th><th>Séries</th><th>Repetições</th><th>Descanso</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Avanço alternado</td><td>Pernas e glúteos</td><td><span class="v-low">2</span><span class="v-med">3</span><span class="v-high">4</span></td><td><span class="i-leve">12 a 15</span><span class="i-mod">8 a 12</span><span class="i-alta">5 a 8</span></td><td><span class="i-leve">45 s</span><span class="i-mod">60 a 90 s</span><span class="i-alta">2 a 3 min</span></td></tr>
+                        <tr><td>Elevação de quadril (ponte)</td><td>Glúteos</td><td><span class="v-low">2</span><span class="v-med">3</span><span class="v-high">4</span></td><td><span class="i-leve">12 a 15</span><span class="i-mod">8 a 12</span><span class="i-alta">5 a 8</span></td><td><span class="i-leve">45 s</span><span class="i-mod">60 a 90 s</span><span class="i-alta">2 a 3 min</span></td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            
+            <div class="bloco-enfase e-ombros">
+                <h3>Bloco de ênfase: Ombros <span class="selo">+2 exercícios</span></h3>
+                <p>Faça estes dois exercícios no final do treino, depois dos exercícios do treino base.</p>
+                <table>
+                    <caption>Exercícios extras de ombros</caption>
+                    <thead>
+                        <tr><th>Exercício</th><th>Músculo</th><th>Séries</th><th>Repetições</th><th>Descanso</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Elevação lateral com halteres</td><td>Ombros</td><td><span class="v-low">2</span><span class="v-med">3</span><span class="v-high">4</span></td><td><span class="i-leve">12 a 15</span><span class="i-mod">8 a 12</span><span class="i-alta">5 a 8</span></td><td><span class="i-leve">45 s</span><span class="i-mod">60 a 90 s</span><span class="i-alta">2 a 3 min</span></td></tr>
+                        <tr><td>Crucifixo invertido com halteres</td><td>Ombros</td><td><span class="v-low">2</span><span class="v-med">3</span><span class="v-high">4</span></td><td><span class="i-leve">12 a 15</span><span class="i-mod">8 a 12</span><span class="i-alta">5 a 8</span></td><td><span class="i-leve">45 s</span><span class="i-mod">60 a 90 s</span><span class="i-alta">2 a 3 min</span></td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            
+            <div class="bloco-enfase e-bracos">
+                <h3>Bloco de ênfase: Braços <span class="selo">+2 exercícios</span></h3>
+                <p>Faça estes dois exercícios no final do treino, depois dos exercícios do treino base.</p>
+                <table>
+                    <caption>Exercícios extras de braços</caption>
+                    <thead>
+                        <tr><th>Exercício</th><th>Músculo</th><th>Séries</th><th>Repetições</th><th>Descanso</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Rosca direta com halteres</td><td>Bíceps</td><td><span class="v-low">2</span><span class="v-med">3</span><span class="v-high">4</span></td><td><span class="i-leve">12 a 15</span><span class="i-mod">8 a 12</span><span class="i-alta">5 a 8</span></td><td><span class="i-leve">45 s</span><span class="i-mod">60 a 90 s</span><span class="i-alta">2 a 3 min</span></td></tr>
+                        <tr><td>Tríceps francês com halter</td><td>Tríceps</td><td><span class="v-low">2</span><span class="v-med">3</span><span class="v-high">4</span></td><td><span class="i-leve">12 a 15</span><span class="i-mod">8 a 12</span><span class="i-alta">5 a 8</span></td><td><span class="i-leve">45 s</span><span class="i-mod">60 a 90 s</span><span class="i-alta">2 a 3 min</span></td></tr>
+                    </tbody>
+                </table>
+            </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Entenda as escolhas</h2>
+            <details>
+                <summary>O que é volume?</summary>
+                <p>É a quantidade de trabalho que você faz: quantas séries, quantos exercícios e quantos dias por semana. Mais volume costuma pedir mais tempo e mais descanso.</p>
+            </details>
+            <details>
+                <summary>O que é intensidade?</summary>
+                <p>É o quão perto do seu limite você chega em cada série. Em um treino leve, sobra bastante força no final. Em um treino intenso, você chega bem perto do limite.</p>
+            </details>
+            <details>
+                <summary>Para que serve a ênfase?</summary>
+                <p>Se você quer dar mais atenção a um músculo, escolha-o na opção 3. O treino ganha 2 exercícios extras para ele, com as mesmas séries e repetições do restante.</p>
+            </details>
+            <details>
+                <summary>Como esta página muda sem JavaScript?</summary>
+                <p>Cada botão é um campo <code>radio</code> escondido com um <code>label</code> bonito. No CSS, o seletor <code>:checked</code> descobre qual está marcado e o <code>:has()</code> mostra ou esconde as partes certas. O código está em <code>css/estilo.css</code>, na seção do montador de treino.</p>
+                <p class="nota">Precisa de um navegador atualizado (Chrome, Edge, Safari ou Firefox recentes).</p>
+            </details>
+        </section>
+
+        <aside>
+            <h3>Lembrete</h3>
+            <p>Estes treinos são exemplos para estudo. Antes de começar, converse com um médico ou profissional de educação física, principalmente se você tiver alguma lesão.</p>
+        </aside>
+    </main>
+
+    <!-- rodapé -->
+    <footer>
+        <p>&copy; 2026 Musculei - Projeto de Desenvolvimento Front-End</p>
+        <p><a href="#topo">Voltar ao topo</a></p>
+    </footer>
+
+</body>
+</html>

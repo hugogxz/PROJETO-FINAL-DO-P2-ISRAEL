@@ -1,0 +1,4 @@
+Estilos específicos da página de Alimentação
+main ul li strong {
+    color: var(--cor-primaria);
+}

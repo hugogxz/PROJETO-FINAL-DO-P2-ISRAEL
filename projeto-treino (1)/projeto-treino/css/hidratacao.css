@@ -1,0 +1,11 @@
+
+label[for="nota-guia"] {
+    display: block;
+    margin-top: 18px;
+    font-weight: 700;
+}
+
+meter {
+    display: block;
+    margin-top: 8px;
+}

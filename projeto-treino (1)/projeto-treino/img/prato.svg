@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" role="img" aria-label="Prato saudável">
+  <rect width="400" height="240" fill="#DCE8EC"/>
+  <circle cx="200" cy="120" r="90" fill="#FFFFFF" stroke="#0F4C5C" stroke-width="8"/>
+  <path d="M200 120 L200 40 A80 80 0 0 1 270 80 Z" fill="#E36414"/>
+  <path d="M200 120 L270 80 A80 80 0 0 1 270 160 Z" fill="#7FB069"/>
+  <path d="M200 120 L270 160 A80 80 0 0 1 140 180 Z" fill="#F2C14E"/>
+</svg>

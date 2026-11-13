@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" role="img" aria-label="Haltere">
+  <rect width="400" height="240" fill="#DCE8EC"/>
+  <rect x="120" y="110" width="160" height="20" rx="6" fill="#0F4C5C"/>
+  <rect x="90" y="70" width="30" height="100" rx="8" fill="#E36414"/>
+  <rect x="60" y="85" width="30" height="70" rx="8" fill="#0F4C5C"/>
+  <rect x="280" y="70" width="30" height="100" rx="8" fill="#E36414"/>
+  <rect x="310" y="85" width="30" height="70" rx="8" fill="#0F4C5C"/>
+</svg>
